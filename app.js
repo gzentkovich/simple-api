@@ -1,4 +1,4 @@
-const vm = new Vue({
+var app = new Vue({
   el: '#app',
   data: {
     results: [
@@ -8,4 +8,4 @@ const vm = new Vue({
       {title: "post number four.", abstract: "lorem ipsum some test dimpsum"}
     ]
   }
-});
+})
