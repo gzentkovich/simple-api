@@ -7,5 +7,9 @@ var app = new Vue({
       {title: "post number three.", abstract: "lorem ipsum some test dimpsum"},
       {title: "post number four.", abstract: "lorem ipsum some test dimpsum"}
     ]
+  },
+  mounted() {
+    axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=VUE_APP_API_KEY")
+    .then(response => {this.results = response.data.results})
   }
 })
